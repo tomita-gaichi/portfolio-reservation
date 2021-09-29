@@ -8,7 +8,7 @@ class Reservation < ApplicationRecord
    validates :person
    validates :confirming
   end
-  
+
   validate :end_date_before_today
   
   def end_date_before_today

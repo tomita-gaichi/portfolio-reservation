@@ -3,7 +3,7 @@ class Post < ApplicationRecord
   has_many :reservations, dependent: :destroy 
 
   with_options presence: true do
-   validates :name
+   validates :post_name
    validates :syoukai
    validates :price, :numericality => {:less_than => 2147483647}
    validates :address

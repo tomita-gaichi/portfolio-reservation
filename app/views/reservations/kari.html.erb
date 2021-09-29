@@ -7,7 +7,7 @@
             <label class="col-md-3">予約した部屋</label>
             <div class="col-md-9">
             <%= link_to("/reservations/#{@reservation.post.id}/rooms") do %>
-              <%= @reservation.post.name %>
+              <%= @reservation.post.post_name %>
             <% end %>
             </div>
           </div>

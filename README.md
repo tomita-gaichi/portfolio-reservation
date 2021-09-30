@@ -1,24 +1,35 @@
-# README
+# 宿泊予約サービスアプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリケーション概要
+サイト内にある宿泊施設を予約できるサイトです。  
+検索欄で場所やキーワードを入力して宿を探すこともできます。  
+また宿を予約だけではなく、自分でオリジナルの宿を作ることもできます。
 
-Things you may want to cover:
+## URL
+https://portfolio-reservation.herokuapp.com
 
-* Ruby version
+## 利用方法
+### ログイン、ユーザー登録について
+* 部屋の予約と登録は、ログインまたはユーザー登録をしないと出来ません。  
+* ユーザー登録には名前、メールアドレス、パスワードが必要です。  
+* ログインには登録したメールアドレスとパスワードを入力する必要があります。  
 
-* System dependencies
+### アカウント、プロフィール設定について
+* 登録したメールアドレス、パスワードは変更可能です。  
+* また自分のプロフィール画面には、アイコン画像と自己紹介文を設定出来ます。
 
-* Configuration
+### 部屋の予約、登録について
+* 部屋の登録にはルーム名、ルーム紹介、料金、住所、ルーム画像を設定しなければなりません。  
+* またルーム検索の際、エリアは登録した住所、キーワードはルーム紹介を対象に検索します。  
+* 予約する時は開始日、終了日、人数を決めます。この時正しい日付を入力しないとエラーになります。  
+* その後確認画面が表示され、一泊何円の部屋を何人でに何日泊まるのかを計算し、合計金額を表示します。  
+* 予約した部屋、登録した部屋は自分のページで閲覧可能です。登録した部屋は削除も出来ます。
 
-* Database creation
+# 使用技術
+* Ruby 3.0.1
+* Rails 6.1.3.2
+* PostgreSQL 13.1 (production)
+* sqlite3 1.4 (development)
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
